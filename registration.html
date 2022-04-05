@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Online Voting System-Registration Page</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+        <style>
+            #address{
+                width: 30%;
+            }
+
+            #imagepart{
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 10px;
+                width: 30%;
+                
+            }
+
+            #role{
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 10px;
+                width: 30%;
+            }
+
+            #role select{
+                border-radius: 5px;
+                padding: 10px;  
+            }
+
+        </style>
+        <div id="headersection">
+        <h1>Online Voting System</h1>
+        </div>
+        <hr>
+        <div id="bodysection">
+        <h3>Registration</h3> 
+        <form action="registration.php" method="POST">
+           <input type="text" name="name" placeholder="Enter Name">
+           <input type="number" name="mobileno" placeholder="Enter Mobile no.">
+            <br><br>
+           <input type="password" name="password" placeholder="Enetr password">
+           <input type="password" name="cpassword" placeholder="Confirm password">
+           <br><br>
+           <input id = "address"type="text" name="address" placeholder="Enter Address">
+           <br><br>
+           <center>
+           <div id="imagepart">
+            Upload image: <input type="file" name="photo"><br><br>
+           </div>
+           <br>
+           <div id="role">
+            Select Role :<select name="role" >
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select></div></center>
+            <br>
+            <button style="padding: 5px;
+                        font-size: 15px;
+                        border-radius: 5px; 
+                        background-color: rgb(52, 146, 45);
+                        color: white;">Register</button>
+            <br><br>
+            Already User?<a href="login.html">Login here</a>
+        </form>
+    </div>
+    </body>
+</html>
